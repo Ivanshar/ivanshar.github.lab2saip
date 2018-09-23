@@ -1,0 +1,185 @@
+*{
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: lightgrey;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-table-caption {
+    flex-basis: 5%;
+    flex: 0 0 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    border: 4px dassolidhed black ;
+    border-collapse: collapse;
+}
+
+.top-th {
+    background: url("../resourse/20170811_4482.JPG") center center  no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    color: white;
+    align-items: center;
+}
+
+.table-container {
+    flex: 0 0 10px;
+    flex-basis: 100%;
+}
+
+.th{
+    padding: 4px 4px;
+    vertical-align: top ;
+    border: 4px solid black ;
+}
+
+.background{
+    background-origin: padding-box;
+}
+.column{
+    background-origin: padding-box;
+    -webkit-column-width: 150px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4 ;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px solid #ccc;
+    -moz-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+}
+
+.text-1{
+    color: darkslategrey;
+    font-size: 19px;
+    font-family: Cambria;
+}
+
+.text-2{
+    color: azure;
+    font-size: 21px;
+    font-family: Times;
+}
+
+.text-3{
+    color: lightseagreen;
+    font-size: 16px;
+    font-family: Tahoma;
+}
+
+
+.pic-1{
+    position: relative;
+    top:20px;
+    left:20px;
+    filter: Alpha(opacity =75);
+
+}
+
+.pic-2{
+    position: relative;
+    top:120px;
+    left:-100px;
+    filter: Alpha(opacity =20);
+
+}
+
+.pic-3{
+    position: relative;
+
+    filter: Alpha(opacity =150);
+    opacity:0.5;
+}
+
+.animation{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 500px;
+    border-radius: 50%;
+    animation: move 5s ;
+    animation-iteration-count: 20;
+}
+
+@keyframes move {
+    from {
+        left: 0px;
+    }
+    50% {
+        left: 95%;
+        transform: rotate(-360deg);
+        filter:hue-rotate(90deg);
+        color: brown;
+        opacity:0.5;
+
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.centered {
+    position: relative;
+    top:210px;
+    left:-180px;
+    filter: Alpha(opacity =150);
+    opacity:0.5;
+}
+.backim {
+    display: inline-block;
+    position: relative;
+    top:210px;
+    left:-180px;
+}
+.backim h2{
+    display:inline-block;
+    position:absolute;
+
+    top:10px;
+    left:0px;
+
+    /* Оформление текста */
+    color:#FFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:30px;
+
+    /* Фон */
+    background-color:rgba(0,0,0,.4);
+    padding:10px 30px;
+}
+.backim tr{
+    display:inline-block;
+    position:absolute;
+
+    top:50px;
+    left:0px;
+
+    color:lightseagreen;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+    padding:20px 10px;
+}
